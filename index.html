@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Class 1 Code Demo</title>
+        <meta charset="UTF-8">
+        <style>
+            h1 {
+                background-color: yellow;
+                color: #e30000;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main style="width: 960px; margin: auto;">
+            <h1>Class 1 Lab</h1>
+            <p style="background-color: lightgreen; color:#7d2020">What is your name?</p>
+            <p style="background-color: purple; color:#ffdf31">What is your quest?</p>
+            <p style="background-color: wheat; color:navy">What is your favorite color?</p>
+            <p style="background-color: skyblue; color:#54290b">What is the airspeed velocity of an unladen swallow?</p>
+        </main>
+        <footer></footer>
+        <script>
+            let user = prompt('What is your name?');
+            console.log(`The user's name is ${user}.`);
+            let quest = prompt('What is your quest?');
+            console.log(`The user's quest is ${quest}.`);
+            let color = prompt('What is your favorite color?');
+            console.log(`Your favorite color is ${color}`);
+            let velocity = prompt('What is the airspeed velocity of an unladen swallow?');
+            console.log(`The airspeed velocity of an unladen swallow is ${velocity}.`);
+            if (velocity == 'What do you mean? An African or European swallow?') {
+                alert(`What? I don't know that. AAAGGHHH!!!`)
+            } else alert(`Greetings, ${user}! Here is a ${color} cloak to warm you on your quest to ${quest}. Your arrival shall be heralded by a messenger proceeding before you at a rate of ${velocity}.`);
+        </script>
+    </body>
+</html>
